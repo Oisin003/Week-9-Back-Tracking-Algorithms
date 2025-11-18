@@ -1,0 +1,34 @@
+function routePacket(fabric, start, goal):
+    rows = number of rows in fabric
+    cols = number of columns in fabric
+
+    visited = 2D array [rows][cols] initialized to false
+
+    if backtrack(start.row, start.col):
+        return true   // valid route found
+    else:
+        return false  // no valid route
+
+
+function backtrack()
+    // Check if node exists
+	if node == true
+		return true;
+    // The Node is not congested
+	if node != 001
+		return true;
+    // Check if the node has been visited already
+	if node == rows & node == columns
+		return false;
+	else 
+		return true;
+
+// Back tracking
+if backTrack = rows + 1, columns; return true; // move down
+if backTrack = rows - 1, columns; return true; // move up
+if backtrack = rows, columns + 1; return true; // move left
+if backtrack = rows, columns - 1; return true; // move right
+
+
+
+https://www.geeksforgeeks.org/dsa/rat-in-a-maze/
