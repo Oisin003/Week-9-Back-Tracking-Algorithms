@@ -11,24 +11,28 @@ function routePacket(fabric, start, goal):
 
 
 function backtrack()
+do{
     // Check if node exists
 	if node == true
 		return true;
     // The Node is not congested
 	if node != 001
 		return true;
-    // Check if the node has been visited already
-	if node == rows & node == columns
-		return false;
-	else 
-		return true;
+    // Track the Node
+	if node == node.visit
+		return true; // The node has been visited
+	else
+		return false; // The node has not been visited
 
-// Back tracking
-if backTrack = rows + 1, columns; return true; // move down
-if backTrack = rows - 1, columns; return true; // move up
-if backtrack = rows, columns + 1; return true; // move left
-if backtrack = rows, columns - 1; return true; // move right
+	// Back tracking
+	if node != node.visited =
+		rows + 1, columns; // move down
+	else if 
+		rows - 1, columns; // move up
+	else if 
+		rows, columns + 1;  // move left
+	else if 
+		rows, columns - 1;// move right
 
 
-
-https://www.geeksforgeeks.org/dsa/rat-in-a-maze/
+}while(node != goal)
